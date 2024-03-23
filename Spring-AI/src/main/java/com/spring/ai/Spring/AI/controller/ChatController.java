@@ -6,7 +6,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
-import com.spring.ai.Spring.AI.ChatOptions.ChatOptionsRequest;
+import com.spring.ai.Spring.AI.ChatOptions.chatOptionsRequest;
 import com.spring.ai.Spring.AI.client.Client;
 
 @RestController
@@ -16,7 +16,7 @@ public class ChatController {
     Client client;
 
     @Autowired
-    ChatOptionsRequest chatOptionsRequest;
+    chatOptionsRequest chatOptionsRequest;
 
     @GetMapping("/v1/chat/completions")
     public ChatResponse getPromtResponse(@RequestParam("message") String message) {

@@ -5,7 +5,7 @@ import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Component;
 
 @Component
-public class ChatOptionsRequest {
+public class chatOptionsRequest {
 
 
     //Use below uri to test direct call to gpt api not in local
@@ -22,5 +22,4 @@ public class ChatOptionsRequest {
         .withPresencePenalty(0f)
         .build();
     }
-    
 }
