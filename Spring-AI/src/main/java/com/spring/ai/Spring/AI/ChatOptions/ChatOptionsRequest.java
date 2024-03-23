@@ -1,14 +1,14 @@
-package com.spring.ai.Spring.AI.ChatOptions;
+package com.spring.ai.Spring.AI.chatOptions;
 
 import org.springframework.ai.openai.OpenAiChatOptions;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Component;
 
 @Component
-public class chatOptionsRequest {
+public class ChatOptionsRequest {
 
 
-    //Use below uri to test direct call to gpt api not in local
+   //Use below uri to test direct call to gpt api not in local
    @Value("${spring.ai.openai.uri}")
     private String apiUrl;
 
